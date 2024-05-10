@@ -7,11 +7,14 @@ const app = express();
 const cors = require("cors");
 const Tasks = require("./routes/task");
 mongoose
-  .connect(process.env.DATABASE, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useCreateIndex: true,
-  })
+  .connect(
+    "mongodb+srv://perammahendra60:9wgEj0TkC9W7F2m6@cluster0.v9p4gbm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+      useCreateIndex: true,
+    }
+  )
   .then(() => {
     console.log("db connected");
   })
