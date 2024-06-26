@@ -2,9 +2,10 @@
   "name": "projbackend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "nodemon app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -26,9 +27,15 @@
     "mongoose": "^5.13.21",
     "mongoose-unique-validator": "^4.0.0",
     "morgan": "^1.9.1",
+    "node-fetch": "^2.6.1",
     "nodemailer": "^6.9.7",
-    "nodemon": "^3.0.2",
+    "nodemon": "^3.1.4",
     "npm": "^6.13.0",
     "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.5.1"
   }
 }
